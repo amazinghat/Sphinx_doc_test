@@ -10,10 +10,27 @@ Nazewnictwo
 Przegląd GUI - Horizon
 ======================
 
-- Repozytorium obrazów - Glance
-- Compute - Nova
-- Sieci - Neutron
-- Costam - Cinder
+.. include:: horizon.rst
+
+Repozytorium obrazów - Glance
+=============================
+
+.. include:: glance.rst
+
+Compute - Nova
+==============
+
+.. include:: nova.rst
+
+Sieci - Neutron
+===============
+
+.. include:: neutron.rst
+
+Block Storage - Cinder
+======================
+
+.. include:: cinder.rst
 
 >>> print "This is a doctest block."
 This is a doctest block.

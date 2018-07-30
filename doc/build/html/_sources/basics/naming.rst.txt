@@ -1,5 +1,3 @@
-.. _naming:
-
 - Instancja = VM
 - Block storage/Persistent storage = volumen
 - Ephemeral storage = “/dev/sda”

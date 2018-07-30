@@ -44,6 +44,24 @@ Styl tekstu
 | **bold**
 | *italics*
 
+::
+
+ | Tekst podzielony
+ | na linie
+ | zaczyna sie od '|'
+ | i spacji
+ | tak jak ten tekst
+ ktory edytuje sie zgodnie
+ ze znakami nowej linii
+
+| Tekst podzielony
+| na linie
+| zaczyna sie od '|'
+| i spacji
+| tak jak ten tekst
+ktory edytuje sie zgodnie
+ze znakami nowej linii
+
 Listy
 =====
 
@@ -247,21 +265,25 @@ Oznaczenia zwracajace uwage
  
  .. warning:: Ostrzezenie
  
+ .. seealso:: Zobacz
+ 
+ .. tip:: Porada
+ 
  .. versionadded:: 1.0.5
  
  .. versionchanged:: 2.4.7
- 
- .. seealso:: Zobacz
 
 .. note:: Wiadomosc
 
 .. warning:: Ostrzezenie
 
+.. seealso:: Zobacz
+
+.. tip:: Porada
+
 .. versionadded:: 1.0.5
 
 .. versionchanged:: 2.4.7
-
-.. seealso:: Zobacz
 
 Kod w tekscie
 =============

@@ -80,10 +80,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Basic stuff</span></p>
+              <p class="caption"><span class="caption-text">OpenStack</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="README.html">Podstawy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html#tematy-zaawansowane">Tematy zaawansowane</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Others</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
 </ul>
 
             
@@ -158,63 +162,45 @@
 <li>Horizon: The official web ui for the OpenStack Project.</li>
 <li>OpenStack Client: The official CLI for OpenStack Projects. You should use this as your CLI for most things, it includes not just nova commands but also commands for most of the projects in OpenStack.</li>
 </ul>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
-$ openstack help volume create
-usage: openstack volume create [-h] [-f {json,shell,table,value,yaml}]</p>
-<blockquote>
-<div>[-c COLUMN] [–max-width &lt;integer&gt;]
-[–fit-width] [–print-empty] [–noindent]
-[–prefix PREFIX] [–size &lt;size&gt;]
-[–type &lt;volume-type&gt;]
-[–image &lt;image&gt; | –snapshot &lt;snapshot&gt; | –source &lt;volume&gt; | –source-replicated &lt;replicated-volume&gt;]
-[–description &lt;description&gt;] [–user &lt;user&gt;]</div></blockquote>
-<dl class="docutils">
-<dt>…</dt>
-<dd>[–multi-attach] [–bootable | –non-bootable]
-[–read-only | –read-write]
-&lt;name&gt;</dd>
-</dl>
-<p>Create new volume</p>
-<dl class="docutils">
-<dt>positional arguments:</dt>
-<dd>&lt;name&gt;                Volume name</dd>
-<dt>optional arguments:</dt>
-<dd><table class="first last docutils option-list" frame="void" rules="none">
-<col class="option" />
-<col class="description" />
-<tbody valign="top">
-<tr><td class="option-group">
-<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
-<td>show this help message and exit</td></tr>
-<tr><td class="option-group">
-<kbd><span class="option">--size <var>&lt;size&gt;</var></span></kbd></td>
-<td>Volume size in GB (Required unless –snapshot or
-–source or –source-replicated is specified)</td></tr>
-<tr><td class="option-group" colspan="2">
-<kbd><span class="option">--type <var>&lt;volume-type&gt;</var></span></kbd></td>
-</tr>
-<tr><td>&#160;</td><td>Set the type of volume</td></tr>
-<tr><td class="option-group" colspan="2">
-<kbd><span class="option">--image <var>&lt;image&gt;</var></span></kbd></td>
-</tr>
-<tr><td>&#160;</td><td>Use &lt;image&gt; as source of volume (name or ID)</td></tr>
-<tr><td class="option-group" colspan="2">
-<kbd><span class="option">--snapshot <var>&lt;snapshot&gt;</var></span></kbd></td>
-</tr>
-<tr><td>&#160;</td><td>Use &lt;snapshot&gt; as source of volume (name or ID)</td></tr>
-<tr><td class="option-group" colspan="2">
-<kbd><span class="option">--source <var>&lt;volume&gt;</var></span></kbd></td>
-</tr>
-<tr><td>&#160;</td><td>Volume to clone (name or ID)</td></tr>
-</tbody>
-</table>
-</dd>
-</dl>
-<div class="section" id="id3">
-<h2>…<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>## Resources
-[API Reference](<a class="reference external" href="https://developer.openstack.org/api-ref/block-storage/">https://developer.openstack.org/api-ref/block-storage/</a>)
-[CLI Docs](<a class="reference external" href="https://docs.openstack.org/cinder/latest/cli/index.html">https://docs.openstack.org/cinder/latest/cli/index.html</a>)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ openstack help volume create
+usage: openstack volume create [-h] [-f {json,shell,table,value,yaml}]
+                               [-c COLUMN] [--max-width &lt;integer&gt;]
+                               [--fit-width] [--print-empty] [--noindent]
+                               [--prefix PREFIX] [--size &lt;size&gt;]
+                               [--type &lt;volume-type&gt;]
+                               [--image &lt;image&gt; | --snapshot &lt;snapshot&gt; | --source &lt;volume&gt; | --source-replicated &lt;replicated-volume&gt;]
+                               [--description &lt;description&gt;] [--user &lt;user&gt;]
+                               [--project &lt;project&gt;]
+                               [--availability-zone &lt;availability-zone&gt;]
+                               [--consistency-group consistency-group&gt;]
+                               [--property &lt;key=value&gt;] [--hint &lt;key=value&gt;]
+                               [--multi-attach] [--bootable | --non-bootable]
+                               [--read-only | --read-write]
+                               &lt;name&gt;
+
+
+Create new volume
+
+positional arguments:
+  &lt;name&gt;                Volume name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --size &lt;size&gt;         Volume size in GB (Required unless --snapshot or
+                        --source or --source-replicated is specified)
+  --type &lt;volume-type&gt;  Set the type of volume
+  --image &lt;image&gt;       Use &lt;image&gt; as source of volume (name or ID)
+  --snapshot &lt;snapshot&gt;
+                        Use &lt;snapshot&gt; as source of volume (name or ID)
+  --source &lt;volume&gt;     Volume to clone (name or ID)
+</pre></div>
+</div>
+</div>
+<div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://developer.openstack.org/api-ref/block-storage/">API Reference</a></div>
+<div class="line"><a class="reference external" href="https://docs.openstack.org/cinder/latest/cli/index.html">CLI Docs</a></div>
 </div>
 </div>
 

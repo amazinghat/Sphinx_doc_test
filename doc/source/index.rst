@@ -11,10 +11,14 @@ Hi, this is a documentation for CECP.
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
-   :caption: Basic stuff
+   :caption: OpenStack
 
    basics/README
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Others
+
    tutorial
 
 
