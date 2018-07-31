@@ -88,33 +88,8 @@ Instalacja
    make builder
  where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 
-3. Instalujemy motyw 'ReadTheDocs' dla Sphinxa:
 
-::
-
- $ pip install sphinx_rtd_theme
-
-4. Edytujemy ``/doc/source/conf.py`` :
-
-::
-
- $ html_theme = 'sphinx_rtd_theme'
-
-a nastepnie komentujemy nastepujacy fragment:
-
-::
-
- #html_sidebars = {
- #    '**': [
- #        'about.html',
- #        'navigation.html',
- #        'relations.html',  # needs 'show_related': True theme option to display
- #        'searchbox.html',
- #        'donate.html',
- #    ]
- #}
-
-5. Wchodzimy do ./doc/source
+3. Wchodzimy do ./doc/source
 
 | w index.rst:
 | wyrzucamy ``Indices and tables`` i wszystko poniżej edytujemy według poniższego wzorca:
