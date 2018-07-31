@@ -48,5 +48,5 @@ Ready images
 Resources
 ---------
 
-- GlanceClient: `Docs <https://docs.openstack.org/python-glanceclient/latest/cli/index.html>`_
+- GlanceClient: `Glance CLI <https://docs.openstack.org/python-glanceclient/latest/cli/index.html>`_
 
