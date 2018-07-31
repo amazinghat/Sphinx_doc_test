@@ -1,7 +1,7 @@
 Tutorial
 ********
 
-Prosty tutorial zawierajacy podstawowe formatowania w restructuredText:
+Prosty tutorial zawierajacy podstawowe formatowania w restructuredText
 
 Naglowki
 ========
@@ -59,6 +59,7 @@ Styl tekstu
 | zaczyna sie od '|'
 | i spacji
 | tak jak ten tekst
+
 ktory edytuje sie zgodnie
 ze znakami nowej linii
 
@@ -329,7 +330,8 @@ To jest kod wklejony w linie: ``def my_fn(foo, bar=True)``
 Zewnetrzne instrukcje
 =====================
 
-Bardziej szczegolowy opis tych i innych mozliwoscie restructuredText mozna znalezc np pod adresami:
+Jesli cos nie dziala, najpewniej brakuje odstepow pustych linii lub spacji.
+Bardziej szczegolowy opis tych i innych mozliwosci restructuredText mozna znalezc np pod adresami:
 
 | `Cheatsheet <https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst#id5>`_
 | `Pelna dokumentacja <http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_

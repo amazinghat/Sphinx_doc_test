@@ -3,8 +3,8 @@ Nova is the OpenStack project that provides a way to provision compute instances
 It requires the following additional OpenStack services for basic function:
 
 - Keystone: This provides identity and authentication for all OpenStack services.
-- `Repozytorium obrazów - Glance`_: This provides the compute image repository. All compute instances launch from glance images.
-- `Neutron`_: This is responsible for provisioning the virtual or physical networks that compute instances connect to on boot.
+- Repozytorium obrazów - Glance: This provides the compute image repository. All compute instances launch from glance images.
+- Neutron: This is responsible for provisioning the virtual or physical networks that compute instances connect to on boot.
 
 How to use
 ----------

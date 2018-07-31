@@ -8,6 +8,7 @@ CECP OpenStack Documentation
 ============================
 
 Hi, this is a documentation for CECP.
+This is new version for dev branch!!!
 
 .. toctree::
    :maxdepth: 2
