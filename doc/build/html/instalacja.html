@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Instalacja &mdash; CECP Docs 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Tutorial" href="tutorial.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> CECP Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics/README.html">Podstawy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/README.html#tematy-zaawansowane">Tematy zaawansowane</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Others</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Instalacja</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#instalacja-pdflatex-i-potrzbenych-paczek">Instalacja pdflatex i potrzbenych paczek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacja-sphinx-versioning">Instalacja Sphinx-versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#przystosowanie-versioningu-do-sphinxa-1-6">Przystosowanie versioningu do sphinxa 1.6+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tworzenie-wersji-dokumentacji">Tworzenie wersji dokumentacji</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tworzenie-hmtl">Tworzenie HMTL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tworzenie-pdf">Tworzenie PDF</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CECP Docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Instalacja</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/instalacja.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instalacja">
+<h1>Instalacja<a class="headerlink" href="#instalacja" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip install sphinx
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li>Klonujemy repo</li>
+<li>Z command line:</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd [nazwa_repo]
+$ mkdir doc
+$ cd doc
+$ sudo sphinx-quickstart
+
+
+Welcome to the Sphinx 1.7.6 quickstart utility.
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+Selected root path: .
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory &quot;_build&quot; within the root path, or you separate
+&quot;source&quot; and &quot;build&quot; directories within the root path.
+&gt; Separate source and build directories (y/n) [n]: y
+
+Inside the root directory, two more directories will be created; &quot;_templates&quot;
+for custom HTML templates and &quot;_static&quot; for custom stylesheets and other static
+files. You can enter another prefix (such as &quot;.&quot;) to replace the underscore.
+&gt; Name prefix for templates and static dir [_]:
+
+The project name will occur in several places in the built documentation.
+&gt; Project name: name
+&gt; Author name(s): autor
+&gt; Project release []: 1.0.0
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+http://sphinx-doc.org/config.html#confval-language.
+&gt; Project language [en]:
+
+The file name suffix for source files. Commonly, this is either &quot;.txt&quot;
+or &quot;.rst&quot;.  Only files with this suffix are considered documents.
+&gt; Source file suffix [.rst]:
+
+One document is special in that it is considered the top node of the
+&quot;contents tree&quot;, that is, it is the root of the hierarchical structure
+of the documents. Normally, this is &quot;index&quot;, but if your &quot;index&quot;
+document is a custom template, you can also set this to another filename.
+&gt; Name of your master document (without suffix) [index]:
+
+Sphinx can also add configuration for epub output:
+&gt; Do you want to use the epub builder (y/n) [n]:
+Indicate which of the following Sphinx extensions should be enabled:
+&gt; autodoc: automatically insert docstrings from modules (y/n) [n]: y
+&gt; doctest: automatically test code snippets in doctest blocks (y/n) [n]:
+&gt; intersphinx: link between Sphinx documentation of different projects (y/n) [n]:
+&gt; todo: write &quot;todo&quot; entries that can be shown or hidden on build (y/n) [n]:
+&gt; coverage: checks for documentation coverage (y/n) [n]:
+&gt; imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
+&gt; mathjax: include math, rendered in the browser by MathJax (y/n) [n]:
+&gt; ifconfig: conditional inclusion of content based on config values (y/n) [n]:
+&gt; viewcode: include links to the source code of documented Python objects (y/n) [n]: y
+&gt; githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:
+
+A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g. `make html&#39; instead of invoking sphinx-build
+directly.
+&gt; Create Makefile? (y/n) [y]: y
+&gt; Create Windows command file? (y/n) [y]: y
+
+Creating file ./source/conf.py.
+Creating file ./source/index.rst.
+Creating file ./Makefile.
+Creating file ./make.bat.
+
+Finished: An initial directory structure has been created.
+
+You should now populate your master file ./source/index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+  make builder
+where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Wchodzimy do ./doc/source</li>
+</ol>
+<div class="line-block">
+<div class="line">w index.rst:</div>
+<div class="line">wyrzucamy <code class="docutils literal notranslate"><span class="pre">Indices</span> <span class="pre">and</span> <span class="pre">tables</span></code> i wszystko poniżej edytujemy według poniższego wzorca:</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">nazwa_dokumentacji</span><span class="p">]</span>
+<span class="o">====================</span>
+
+<span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+  <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+  <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="p">[</span><span class="n">tytuł</span> <span class="n">sekcji</span><span class="p">]</span>
+
+  <span class="p">[</span><span class="n">pliki</span> <span class="o">.</span><span class="n">rst</span> <span class="n">z</span> <span class="n">dokumentacja</span><span class="p">]</span>
+  <span class="p">[</span><span class="n">kolejny</span> <span class="n">plik</span><span class="p">]</span>
+  <span class="p">[</span><span class="n">nastepny</span> <span class="n">plik</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="instalacja-pdflatex-i-potrzbenych-paczek">
+<h2>Instalacja pdflatex i potrzbenych paczek<a class="headerlink" href="#instalacja-pdflatex-i-potrzbenych-paczek" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install texlive-latex-base
+$ sudo apt-get install texlive-latex-extra
+$ sudo apt-get install texlive-fonts-recommended
+</pre></div>
+</div>
+</div>
+<div class="section" id="instalacja-sphinx-versioning">
+<h2>Instalacja Sphinx-versioning<a class="headerlink" href="#instalacja-sphinx-versioning" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip install sphinxcontrib-versioning
+</pre></div>
+</div>
+<div class="section" id="przystosowanie-versioningu-do-sphinxa-1-6">
+<h3>Przystosowanie versioningu do sphinxa 1.6+<a class="headerlink" href="#przystosowanie-versioningu-do-sphinxa-1-6" title="Permalink to this headline">¶</a></h3>
+<p>w pliku : <code class="docutils literal notranslate"><span class="pre">/usr/local/lib/python2.7/dist-packages/sphinxcontrib/versioning/sphinx_.py</span></code></p>
+<p>zmieniamy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">html_sidebars</span><span class="p">[</span><span class="s1">&#39;**&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">StandaloneHTMLBuilder</span><span class="o">.</span><span class="n">default_sidebars</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;versions.html&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>na:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">html_sidebars</span><span class="p">[</span><span class="s1">&#39;**&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;versions.html&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tworzenie-wersji-dokumentacji">
+<h3>Tworzenie wersji dokumentacji<a class="headerlink" href="#tworzenie-wersji-dokumentacji" title="Permalink to this headline">¶</a></h3>
+<p>Bedac na wybranym branchu gita: (git checkout)</p>
+<ol class="arabic simple">
+<li>Zmiany w lokalnym repozytorium</li>
+<li>Lokalna dokumentacja</li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>..&lt;repo&gt;/doc/$ make html
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Wypchniecie zmian na remote repozytorium (git push)</li>
+<li>Stworzenie lokalnie wersji dokumentacji</li>
+</ol>
+<p>W katalogu root dla repozytorium git:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>../&lt;repo&gt;$ sphinx-versioning build ./doc/source/ ./doc/build/html
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li>Wypchniecie nowej dokumentacji na remote repo (git push)</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Nalezy najpierw pushowac zmiany a nastepnie lokalnie tworzyc wersje dokumentacji, w innym przypadku zmiany nie beda widoczne (versioning ignoruje commit,stash itd)!</p>
+</div>
+</div>
+</div>
+<div class="section" id="tworzenie-hmtl">
+<h2>Tworzenie HMTL<a class="headerlink" href="#tworzenie-hmtl" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">/</span><span class="n">doc</span> <span class="p">:</span>
+<span class="n">make</span> <span class="n">html</span>
+
+<span class="n">w</span> <span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">html</span> <span class="p">:</span>
+<span class="n">dokumentacja</span> <span class="n">dostepna</span> <span class="n">w</span> <span class="n">index</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tworzenie-pdf">
+<h2>Tworzenie PDF<a class="headerlink" href="#tworzenie-pdf" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">/</span><span class="n">doc</span> <span class="p">:</span>
+<span class="n">make</span> <span class="n">latex</span>
+
+<span class="n">w</span> <span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">build</span><span class="o">/</span><span class="n">latex</span> <span class="p">:</span>
+<span class="n">pdflatex</span> <span class="p">[</span><span class="n">nazwa</span><span class="p">]</span><span class="o">.</span><span class="n">tex</span>
+<span class="n">makeindex</span> <span class="o">-</span><span class="n">s</span> <span class="n">python</span><span class="o">.</span><span class="n">ist</span> <span class="p">[</span><span class="n">nazwa</span><span class="p">]</span><span class="o">.</span><span class="n">idx</span>
+<span class="n">pdflatex</span> <span class="p">[</span><span class="n">nazwa</span><span class="p">]</span><span class="o">.</span><span class="n">tex</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="tutorial.html" class="btn btn-neutral" title="Tutorial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aleksander.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

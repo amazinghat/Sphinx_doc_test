@@ -21,5 +21,6 @@ This is new version for dev branch!!!
    :caption: Others
 
    tutorial
+   instalacja
 
 
