@@ -1,6 +1,9 @@
 Instalacja
 **********
 
+Instalacja i konfiguracja Sphinx
+--------------------------------
+
 ::
 
  $ sudo pip install sphinx 
@@ -141,8 +144,11 @@ Instalacja pdflatex i potrzbenych paczek
  $ sudo apt-get install texlive-latex-extra
  $ sudo apt-get install texlive-fonts-recommended
 
-Instalacja Sphinx-versioning
-============================
+Sphinx-versioning
+=================
+
+Instalacja
+----------
 
 ::
 
