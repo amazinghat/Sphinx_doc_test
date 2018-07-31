@@ -3,6 +3,10 @@ Tutorial
 
 Prosty tutorial zawierajacy podstawowe formatowania w restructuredText
 
+.. versionadded:: 1.0.1
+
+nowy ficzer brancha develop
+
 Naglowki
 ========
 
