@@ -3,9 +3,9 @@ Tutorial
 
 Prosty tutorial zawierajacy podstawowe formatowania w restructuredText
 
-.. versionadded:: 1.0.3
+.. versionadded:: 1.7
 
-zmiana na masterze
+jeden siedem turbo diesel
 
 Naglowki
 ========
