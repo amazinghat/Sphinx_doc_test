@@ -3,9 +3,10 @@ Tutorial
 
 Prosty tutorial zawierajacy podstawowe formatowania w restructuredText
 
-.. versionadded:: 1.1
+.. versionadded:: 1.1.1
 
 Nowa wersja nowy branch nowy ja
+Kolejna zmiana
 
 Naglowki
 ========
