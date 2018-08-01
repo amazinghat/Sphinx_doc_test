@@ -91,18 +91,16 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Instalacja</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#instalacja-i-konfiguracja-sphinx">Instalacja i konfiguracja Sphinx</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#instalacja-pdflatex-i-potrzbenych-paczek">Instalacja pdflatex i potrzbenych paczek</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sphinx-versioning">Sphinx-versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacja-i-konfiguracja-sphinx">Instalacja i konfiguracja Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacja-pdflatex-i-potrzbenych-paczek">Instalacja pdflatex i potrzbenych paczek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sphinx-versioning">Sphinx-versioning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Instalacja</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#przystosowanie-versioningu-do-sphinxa-1-6">Przystosowanie versioningu do sphinxa 1.6+</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tworzenie-wersji-dokumentacji">Tworzenie wersji dokumentacji</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Instalacja</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#przystosowanie-versioningu-do-sphinxa-1-6">Przystosowanie versioningu do sphinxa 1.6+</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tworzenie-wersji-dokumentacji">Tworzenie wersji dokumentacji</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#tworzenie-hmtl">Tworzenie HMTL</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tworzenie-pdf">Tworzenie PDF</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#tworzenie-hmtl">Tworzenie HMTL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tworzenie-pdf">Tworzenie PDF</a></li>
 </ul>
 </li>
 </ul>
@@ -302,8 +300,9 @@ where &quot;builder&quot; is one of the supported builders, e.g. html, latex or 
   <span class="p">[</span><span class="n">nastepny</span> <span class="n">plik</span><span class="p">]</span>
 </pre></div>
 </div>
+</div>
 <div class="section" id="instalacja-pdflatex-i-potrzbenych-paczek">
-<h3>Instalacja pdflatex i potrzbenych paczek<a class="headerlink" href="#instalacja-pdflatex-i-potrzbenych-paczek" title="Permalink to this headline">¶</a></h3>
+<h2>Instalacja pdflatex i potrzbenych paczek<a class="headerlink" href="#instalacja-pdflatex-i-potrzbenych-paczek" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo apt-get install texlive-latex-base
 $ sudo apt-get install texlive-latex-extra
 $ sudo apt-get install texlive-fonts-recommended
@@ -311,17 +310,15 @@ $ sudo apt-get install texlive-fonts-recommended
 </div>
 </div>
 <div class="section" id="sphinx-versioning">
-<h3>Sphinx-versioning<a class="headerlink" href="#sphinx-versioning" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
+<h2>Sphinx-versioning<a class="headerlink" href="#sphinx-versioning" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
-<h2>Instalacja<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h3>Instalacja<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo pip install sphinxcontrib-versioning
 </pre></div>
 </div>
 </div>
 <div class="section" id="przystosowanie-versioningu-do-sphinxa-1-6">
-<h2>Przystosowanie versioningu do sphinxa 1.6+<a class="headerlink" href="#przystosowanie-versioningu-do-sphinxa-1-6" title="Permalink to this headline">¶</a></h2>
+<h3>Przystosowanie versioningu do sphinxa 1.6+<a class="headerlink" href="#przystosowanie-versioningu-do-sphinxa-1-6" title="Permalink to this headline">¶</a></h3>
 <p>w pliku : <code class="docutils literal notranslate"><span class="pre">/usr/local/lib/python2.7/dist-packages/sphinxcontrib/versioning/sphinx_.py</span></code></p>
 <p>zmieniamy:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">html_sidebars</span><span class="p">[</span><span class="s1">&#39;**&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">StandaloneHTMLBuilder</span><span class="o">.</span><span class="n">default_sidebars</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;versions.html&#39;</span><span class="p">]</span>
@@ -333,7 +330,7 @@ $ sudo apt-get install texlive-fonts-recommended
 </div>
 </div>
 <div class="section" id="tworzenie-wersji-dokumentacji">
-<h2>Tworzenie wersji dokumentacji<a class="headerlink" href="#tworzenie-wersji-dokumentacji" title="Permalink to this headline">¶</a></h2>
+<h3>Tworzenie wersji dokumentacji<a class="headerlink" href="#tworzenie-wersji-dokumentacji" title="Permalink to this headline">¶</a></h3>
 <p>Bedac na wybranym branchu gita: (git checkout)</p>
 <ol class="arabic simple">
 <li>Zmiany w lokalnym repozytorium</li>
@@ -357,8 +354,10 @@ $ sudo apt-get install texlive-fonts-recommended
 <p class="first admonition-title">Warning</p>
 <p class="last">Nalezy najpierw pushowac zmiany a nastepnie lokalnie tworzyc wersje dokumentacji, w innym przypadku zmiany nie beda widoczne (versioning ignoruje commit,stash itd)!</p>
 </div>
+</div>
+</div>
 <div class="section" id="tworzenie-hmtl">
-<h3>Tworzenie HMTL<a class="headerlink" href="#tworzenie-hmtl" title="Permalink to this headline">¶</a></h3>
+<h2>Tworzenie HMTL<a class="headerlink" href="#tworzenie-hmtl" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">/</span><span class="n">doc</span> <span class="p">:</span>
 <span class="n">make</span> <span class="n">html</span>
 
@@ -368,7 +367,7 @@ $ sudo apt-get install texlive-fonts-recommended
 </div>
 </div>
 <div class="section" id="tworzenie-pdf">
-<h3>Tworzenie PDF<a class="headerlink" href="#tworzenie-pdf" title="Permalink to this headline">¶</a></h3>
+<h2>Tworzenie PDF<a class="headerlink" href="#tworzenie-pdf" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">/</span><span class="n">doc</span> <span class="p">:</span>
 <span class="n">make</span> <span class="n">latex</span>
 
@@ -377,7 +376,6 @@ $ sudo apt-get install texlive-fonts-recommended
 <span class="n">makeindex</span> <span class="o">-</span><span class="n">s</span> <span class="n">python</span><span class="o">.</span><span class="n">ist</span> <span class="p">[</span><span class="n">nazwa</span><span class="p">]</span><span class="o">.</span><span class="n">idx</span>
 <span class="n">pdflatex</span> <span class="p">[</span><span class="n">nazwa</span><span class="p">]</span><span class="o">.</span><span class="n">tex</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -424,8 +422,9 @@ $ sudo apt-get install texlive-fonts-recommended
     <div class="rst-other-versions">
         <dl>
             <dt>Branches</dt>
-            <dd><a href="../develop/index.html">develop</a></dd>
             <dd><a href="instalacja.html">master</a></dd>
+            <dd><a href="../v1.1/instalacja.html">v1.1</a></dd>
+            <dd><a href="../v1.7/instalacja.html">v1.7</a></dd>
         </dl>
     </div>
 </div>

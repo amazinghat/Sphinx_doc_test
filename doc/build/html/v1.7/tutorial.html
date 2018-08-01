@@ -1,0 +1,624 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorial &mdash; CECP Docs 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Instalacja" href="instalacja.html" />
+    <link rel="prev" title="Podstawy" href="basics/README.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> CECP Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics/README.html">Podstawy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics/README.html#tematy-zaawansowane">Tematy zaawansowane</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Others</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#naglowki">Naglowki</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#h3-podsekcje">H3 - Podsekcje</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#h4-podpodsekcje">H4 - Podpodsekcje</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#styl-tekstu">Styl tekstu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#listy">Listy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tabelki">Tabelki</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linki">Linki</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#obrazy">Obrazy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pobieranie">Pobieranie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#podstawienia">Podstawienia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#oznaczenia-zwracajace-uwage">Oznaczenia zwracajace uwage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kod-w-tekscie">Kod w tekscie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#zewnetrzne-instrukcje">Zewnetrzne instrukcje</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="instalacja.html">Instalacja</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">CECP Docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tutorial</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tutorial.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>Prosty tutorial zawierajacy podstawowe formatowania w restructuredText</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.7.</span></p>
+</div>
+<p>jeden siedem turbo diesel</p>
+<div class="section" id="naglowki">
+<h2>Naglowki<a class="headerlink" href="#naglowki" title="Permalink to this headline">¶</a></h2>
+<p>Kolejne sekcje deklarujemy (zagniezdzamy) w nastepujacy sposob:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Tutorial</span> <span class="p">(</span><span class="n">glowny</span> <span class="n">na</span> <span class="n">strone</span><span class="p">)</span>
+<span class="o">***************************</span>
+<span class="n">Powinien</span> <span class="n">byc</span> <span class="n">tylko</span> <span class="n">jeden</span> <span class="n">taki</span> <span class="n">naglowek</span> <span class="n">na</span> <span class="n">dana</span> <span class="n">strone</span><span class="p">,</span>
+<span class="o">--</span> <span class="n">dodatkowo</span> <span class="n">naglowek</span> <span class="n">ten</span> <span class="n">bedzie</span> <span class="n">uzyty</span> <span class="n">jako</span> <span class="n">rozdzial</span> <span class="n">przy</span>
+   <span class="n">konwersji</span> <span class="n">do</span> <span class="o">.</span><span class="n">pdf</span>
+
+<span class="n">Naglowki</span> <span class="p">(</span><span class="n">sekcje</span> <span class="n">strony</span><span class="p">)</span>
+<span class="o">========================</span>
+
+<span class="n">H3</span> <span class="o">-</span> <span class="n">Podsekcje</span>
+<span class="o">--------------</span>
+
+<span class="n">H4</span> <span class="o">-</span> <span class="n">Podpodsekcje</span>
+<span class="o">+++++++++++++++++</span>
+</pre></div>
+</div>
+<p>Powoduje to zagniezdzanie kolejnych paragrafow w drzewe (w tym przypadku tutoriala) jak po lewej,
+a naglowki paragrafow dodaja sie jak poniżej:</p>
+<div class="section" id="h3-podsekcje">
+<h3>H3 - Podsekcje<a class="headerlink" href="#h3-podsekcje" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="h4-podpodsekcje">
+<h4>H4 - Podpodsekcje<a class="headerlink" href="#h4-podpodsekcje" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+</div>
+<div class="section" id="styl-tekstu">
+<h2>Styl tekstu<a class="headerlink" href="#styl-tekstu" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">**</span><span class="n">bold</span><span class="o">**</span>
+<span class="o">*</span><span class="n">italics</span><span class="o">*</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><strong>bold</strong></div>
+<div class="line"><em>italics</em></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">Tekst</span> <span class="n">podzielony</span>
+<span class="o">|</span> <span class="n">na</span> <span class="n">linie</span>
+<span class="o">|</span> <span class="n">zaczyna</span> <span class="n">sie</span> <span class="n">od</span> <span class="s1">&#39;|&#39;</span>
+<span class="o">|</span> <span class="n">i</span> <span class="n">spacji</span>
+<span class="o">|</span> <span class="n">tak</span> <span class="n">jak</span> <span class="n">ten</span> <span class="n">tekst</span>
+<span class="n">ktory</span> <span class="n">edytuje</span> <span class="n">sie</span> <span class="n">zgodnie</span>
+<span class="n">ze</span> <span class="n">znakami</span> <span class="n">nowej</span> <span class="n">linii</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Tekst podzielony</div>
+<div class="line">na linie</div>
+<div class="line">zaczyna sie od ‘|’</div>
+<div class="line">i spacji</div>
+<div class="line">tak jak ten tekst</div>
+</div>
+<p>ktory edytuje sie zgodnie
+ze znakami nowej linii</p>
+</div>
+<div class="section" id="listy">
+<h2>Listy<a class="headerlink" href="#listy" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">Cos</span><span class="o">.</span>
+<span class="o">*</span> <span class="n">Cos</span> <span class="n">jeszcze</span><span class="o">.</span>
+
+<span class="n">albo</span>
+
+<span class="mf">1.</span> <span class="n">Punkt</span> <span class="mi">1</span>
+<span class="mf">2.</span> <span class="n">Punkt</span> <span class="mi">2</span>
+<span class="mf">3.</span> <span class="n">Punkt</span> <span class="mi">3</span>
+
+<span class="n">albo</span>
+
+<span class="o">-</span> <span class="n">Cos</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">Jeszcze</span> <span class="n">cos</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">I</span> <span class="n">znowu</span> <span class="n">cos</span><span class="o">.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Cos.</li>
+<li>Cos jeszcze.</li>
+</ul>
+<p>albo</p>
+<ol class="arabic simple">
+<li>Punkt 1</li>
+<li>Punkt 2</li>
+<li>Punkt 3</li>
+</ol>
+<p>albo</p>
+<ul class="simple">
+<li>Cos.</li>
+<li>Jeszcze cos.</li>
+<li>I znowu cos.</li>
+</ul>
+</div>
+<div class="section" id="tabelki">
+<h2>Tabelki<a class="headerlink" href="#tabelki" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Skomplikowana</span> <span class="n">tabela</span><span class="p">:</span>
+
+<span class="o">+--------------+--------------+-------------+</span>
+<span class="o">|</span> <span class="n">Naglowek</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">Naglowek</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">Naglowek</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+==============+==============+=============+</span>
+<span class="o">|</span>   <span class="n">wiersz</span> <span class="mi">1</span>   <span class="o">|</span>  <span class="n">kolumna</span> <span class="mi">2</span>   <span class="o">|</span>  <span class="n">kolumna</span> <span class="mi">3</span>  <span class="o">|</span>
+<span class="o">+--------------+--------------+-------------+</span>
+<span class="o">|</span>   <span class="n">wiersz</span> <span class="mi">2</span>   <span class="o">|</span>     <span class="n">Polaczone</span> <span class="n">komorki</span><span class="o">.</span>     <span class="o">|</span>
+<span class="o">+--------------+--------------+-------------+</span>
+<span class="o">|</span>   <span class="n">wiersz</span> <span class="mi">3</span>   <span class="o">|</span>  <span class="n">Polaczone</span>   <span class="o">|</span> <span class="o">-</span> <span class="n">komorki</span>   <span class="o">|</span>
+<span class="o">+--------------+</span>  <span class="n">komorki</span><span class="o">.</span>    <span class="o">|</span> <span class="o">-</span> <span class="n">zawieraja</span> <span class="o">|</span>
+<span class="o">|</span>   <span class="n">wiersz</span> <span class="mi">4</span>   <span class="o">|</span>              <span class="o">|</span> <span class="o">-</span> <span class="n">punkty</span>    <span class="o">|</span>
+<span class="o">+--------------+--------------+-------------+</span>
+
+<span class="n">Prosta</span> <span class="n">tabelka</span><span class="p">:</span>
+
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+   <span class="n">Wejscia</span>    <span class="n">Wyjscia</span>
+<span class="o">------------</span>  <span class="o">-------</span>
+  <span class="n">A</span>      <span class="n">B</span>    <span class="n">A</span> <span class="ow">or</span> <span class="n">B</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+<span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">False</span>  <span class="kc">True</span>
+<span class="kc">False</span>  <span class="kc">True</span>   <span class="kc">True</span>
+<span class="kc">True</span>   <span class="kc">True</span>   <span class="kc">True</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">======</span>
+</pre></div>
+</div>
+<p>Wynik:</p>
+<blockquote>
+<div><p>Skomplikowana tabela:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="34%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Naglowek 1</th>
+<th class="head">Naglowek 2</th>
+<th class="head">Naglowek 3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>wiersz 1</td>
+<td>kolumna 2</td>
+<td>kolumna 3</td>
+</tr>
+<tr class="row-odd"><td>wiersz 2</td>
+<td colspan="2">Polaczone komorki.</td>
+</tr>
+<tr class="row-even"><td>wiersz 3</td>
+<td rowspan="2">Polaczone
+komorki.</td>
+<td rowspan="2"><ul class="first last simple">
+<li>komorki</li>
+<li>zawieraja</li>
+<li>punkty</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>wiersz 4</td>
+</tr>
+</tbody>
+</table>
+<p>Prosta tabelka:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="32%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Wejscia</th>
+<th class="head">Wyjscia</th>
+</tr>
+<tr class="row-even"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A or B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-odd"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr class="row-odd"><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr class="row-even"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="linki">
+<h2>Linki<a class="headerlink" href="#linki" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Zwykly link zewnetrzny:
+`Glowne repozytorium CECP &lt;http://git.cadc.pl/&gt;`_
+</pre></div>
+</div>
+<p>Zwykly link zewnetrzny:
+<a class="reference external" href="http://git.cadc.pl/">Glowne repozytorium CECP</a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Odnosnik do jakiejs sekcji na tej stronie:
+`Tabelki`_
+</pre></div>
+</div>
+<p>Odnosnik do jakiejs sekcji na tej stronie:
+<a class="reference internal" href="#tabelki">Tabelki</a></p>
+</div>
+<div class="section" id="obrazy">
+<h2>Obrazy<a class="headerlink" href="#obrazy" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">_to_lena</span><span class="p">:</span> <span class="o">&lt;----</span> <span class="n">to</span> <span class="n">jest</span> <span class="s1">&#39;link&#39;</span> <span class="n">do</span> <span class="n">zdjecia</span><span class="p">,</span> <span class="n">dziala</span> <span class="n">jak</span> <span class="n">zwykly</span> <span class="n">odnosnik</span> <span class="p">(</span><span class="n">patrz</span> <span class="n">Linki</span><span class="p">)</span>
+<span class="o">..</span> <span class="n">figure</span><span class="p">::</span>  <span class="n">images</span><span class="o">/</span><span class="n">lena</span><span class="o">.</span><span class="n">png</span>
+   <span class="p">:</span><span class="n">align</span><span class="p">:</span>   <span class="n">center</span>
+   <span class="p">:</span><span class="n">scale</span><span class="p">:</span>   <span class="mi">50</span> <span class="o">%</span>
+
+   <span class="n">To</span> <span class="n">jest</span> <span class="n">Lena</span> <span class="n">w</span> <span class="n">rozmiarze</span> <span class="mi">50</span><span class="o">%</span> <span class="n">oryginalu</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="figure align-center" id="id1">
+<span id="to-lena"></span><a class="reference internal image-reference" href="_images/lena.png"><img alt="_images/lena.png" src="_images/lena.png" style="width: 256.0px; height: 256.0px;" /></a>
+<p class="caption"><span class="caption-text">To jest Lena w rozmiarze 50% oryginalu.</span></p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Obrazek</span><span class="p">,</span> <span class="n">ktory</span> <span class="n">szukasz</span> <span class="n">to_lena_</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Obrazek, ktory szukasz <a class="reference internal" href="#to-lena">to_lena</a>.</p>
+</div>
+<div class="section" id="pobieranie">
+<h2>Pobieranie<a class="headerlink" href="#pobieranie" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:download:`Zdjecie Leny&lt;images/lena.png&gt;`
+</pre></div>
+</div>
+<p><a class="reference download internal" href="_downloads/lena.png" download=""><code class="xref download docutils literal notranslate"><span class="pre">Zdjecie</span> <span class="pre">Leny</span></code></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>:download:`Jakis .pdf&lt;basics/iaas-training-basic.pdf&gt;`
+</pre></div>
+</div>
+<p><a class="reference download internal" href="_downloads/iaas-training-basic.pdf" download=""><code class="xref download docutils literal notranslate"><span class="pre">Jakis</span> <span class="pre">.pdf</span></code></a></p>
+</div>
+<div class="section" id="podstawienia">
+<h2>Podstawienia<a class="headerlink" href="#podstawienia" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="o">|</span><span class="n">biohazard</span><span class="o">|</span> <span class="n">image</span><span class="p">::</span> <span class="n">images</span><span class="o">/</span><span class="n">biohazard</span><span class="o">.</span><span class="n">png</span>
+<span class="n">Symbol</span> <span class="o">|</span><span class="n">biohazard</span><span class="o">|</span> <span class="n">musi</span> <span class="n">byc</span> <span class="n">umieszczany</span> <span class="n">na</span> <span class="n">opakowaniach</span> <span class="n">z</span> <span class="n">odpadami</span> <span class="n">radioaktywnymi</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Symbol <img alt="biohazard" src="_images/biohazard.png" /> musi byc umieszczany na opakowaniach z odpadami radioaktywnymi.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Podstawienia moga okazac sie bardzo przydatne gdy zdefiniujemy je w osobnym pliku .rst i dolaczymy go
+za pomoca ‘.. include’ na gorze kazdego pliku. Wtedy zawsze mozemy z nich korzystac</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">include</span> <span class="n">myfile</span><span class="o">.</span><span class="n">rst</span>
+<span class="n">taka</span> <span class="n">dyrektywa</span> <span class="n">powoduje</span> <span class="s1">&#39;wpisanie&#39;</span> <span class="n">zawartosci</span> <span class="n">myfile</span><span class="o">.</span><span class="n">rst</span> <span class="n">w</span> <span class="n">tym</span> <span class="n">pliku</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<p>Nowe sekcje dokumentacji tworzymy jako nowy plik .rst i podpinamy go do source/index.rst jak ponizej:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+  <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+  <span class="p">:</span><span class="n">hidden</span><span class="p">:</span>
+  <span class="p">:</span><span class="n">caption</span><span class="p">:</span> <span class="n">Basic</span> <span class="n">stuff</span>
+
+  <span class="n">basics</span><span class="o">/</span><span class="n">README</span>   <span class="o">//</span> <span class="n">tu</span> <span class="n">dopisujemy</span> <span class="n">nazwe</span> <span class="n">pliku</span>
+  <span class="n">tutorial</span>        <span class="o">//</span> <span class="n">bez</span> <span class="n">rozszerzenia</span>
+</pre></div>
+</div>
+<p>Istniejace sekcje po prostu edytujemy w danym pliku .rst</p>
+</div>
+<div class="section" id="oznaczenia-zwracajace-uwage">
+<h2>Oznaczenia zwracajace uwage<a class="headerlink" href="#oznaczenia-zwracajace-uwage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">note</span><span class="p">::</span> <span class="n">Wiadomosc</span>
+
+<span class="o">..</span> <span class="n">warning</span><span class="p">::</span> <span class="n">Ostrzezenie</span>
+
+<span class="o">..</span> <span class="n">seealso</span><span class="p">::</span> <span class="n">Zobacz</span>
+
+<span class="o">..</span> <span class="n">tip</span><span class="p">::</span> <span class="n">Porada</span>
+
+<span class="o">..</span> <span class="n">versionadded</span><span class="p">::</span> <span class="mf">1.0</span><span class="o">.</span><span class="mi">5</span>
+
+<span class="o">..</span> <span class="n">versionchanged</span><span class="p">::</span> <span class="mf">2.4</span><span class="o">.</span><span class="mi">7</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Wiadomosc</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Ostrzezenie</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">Zobacz</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Porada</p>
+</div>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 1.0.5.</span></p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 2.4.7.</span></p>
+</div>
+</div>
+<div class="section" id="kod-w-tekscie">
+<h2>Kod w tekscie<a class="headerlink" href="#kod-w-tekscie" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Surowy</span> <span class="n">kod</span> <span class="n">mozna</span> <span class="n">wklejac</span> <span class="n">po</span> <span class="n">podwojnym</span> <span class="n">dwukropku</span><span class="p">::</span>
+
+   <span class="k">def</span> <span class="nf">my_fn</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+       <span class="sd">&quot;&quot;&quot;A really useful function.</span>
+
+<span class="sd">       Returns None</span>
+<span class="sd">       &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>Surowy kod mozna wklejac po podwojnym dwukropku:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_fn</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A really useful function.</span>
+
+<span class="sd">    Returns None</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Kod powinien byc wklejony z odstepem pustej linii i wciety za pomoca spacji.</div>
+<div class="line">Dzieki temu symbol ‘::’ umozliwia rowniez dowolne tworzenie bloku np:</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">::</span>
+<span class="p">(</span><span class="n">pusta</span> <span class="n">linia</span><span class="p">)</span>
+<span class="p">(</span><span class="n">spacja</span><span class="p">)</span><span class="n">kod</span> <span class="n">kod</span> <span class="n">kod</span>
+<span class="p">(</span><span class="n">spacja</span><span class="p">)</span><span class="n">kod</span> <span class="n">kod</span> <span class="n">kod</span>
+ <span class="o">...</span>
+<span class="p">(</span><span class="n">brak</span> <span class="n">spacji</span><span class="p">)</span> <span class="n">koniec</span> <span class="n">bloku</span>
+</pre></div>
+</div>
+<p>Kod wklejony ‘w linie’ tekstu wklejamy za pomoca `` (podwojny backtick):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>To jest kod wklejony w linie: ``def my_fn(foo, bar=True)``
+</pre></div>
+</div>
+<p>To jest kod wklejony w linie: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">my_fn(foo,</span> <span class="pre">bar=True)</span></code></p>
+</div>
+<div class="section" id="zewnetrzne-instrukcje">
+<h2>Zewnetrzne instrukcje<a class="headerlink" href="#zewnetrzne-instrukcje" title="Permalink to this headline">¶</a></h2>
+<p>Jesli cos nie dziala, najpewniej brakuje odstepow pustych linii lub spacji.
+Bardziej szczegolowy opis tych i innych mozliwosci restructuredText mozna znalezc np pod adresami:</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst#id5">Cheatsheet</a></div>
+<div class="line"><a class="reference external" href="http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">Pelna dokumentacja</a></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="instalacja.html" class="btn btn-neutral float-right" title="Instalacja" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="basics/README.html" class="btn btn-neutral" title="Podstawy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aleksander.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v1.7
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../master/tutorial.html">master</a></dd>
+            <dd><a href="../v1.1/tutorial.html">v1.1</a></dd>
+            <dd><a href="tutorial.html">v1.7</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

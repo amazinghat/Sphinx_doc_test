@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cinder - block storage service &mdash; CECP Docs 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/banner.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> CECP Docs
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">OpenStack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="README.html">Podstawy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README.html#tematy-zaawansowane">Tematy zaawansowane</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Others</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../instalacja.html">Instalacja</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CECP Docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Cinder - block storage service</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/cinder.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cinder-block-storage-service">
+<h1>Cinder - block storage service<a class="headerlink" href="#cinder-block-storage-service" title="Permalink to this headline">¶</a></h1>
+<p>Cinder is an OpenStack project to provide “block storage as a service”.</p>
+</div>
+<div class="section" id="how-to-use">
+<h1>How to use<a class="headerlink" href="#how-to-use" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Horizon: The official web ui for the OpenStack Project.</li>
+<li>OpenStack Client: The official CLI for OpenStack Projects. You should use this as your CLI for most things, it includes not just nova commands but also commands for most of the projects in OpenStack.</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ openstack help volume create
+usage: openstack volume create [-h] [-f {json,shell,table,value,yaml}]
+                               [-c COLUMN] [--max-width &lt;integer&gt;]
+                               [--fit-width] [--print-empty] [--noindent]
+                               [--prefix PREFIX] [--size &lt;size&gt;]
+                               [--type &lt;volume-type&gt;]
+                               [--image &lt;image&gt; | --snapshot &lt;snapshot&gt; | --source &lt;volume&gt; | --source-replicated &lt;replicated-volume&gt;]
+                               [--description &lt;description&gt;] [--user &lt;user&gt;]
+                               [--project &lt;project&gt;]
+                               [--availability-zone &lt;availability-zone&gt;]
+                               [--consistency-group consistency-group&gt;]
+                               [--property &lt;key=value&gt;] [--hint &lt;key=value&gt;]
+                               [--multi-attach] [--bootable | --non-bootable]
+                               [--read-only | --read-write]
+                               &lt;name&gt;
+
+
+Create new volume
+
+positional arguments:
+  &lt;name&gt;                Volume name
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --size &lt;size&gt;         Volume size in GB (Required unless --snapshot or
+                        --source or --source-replicated is specified)
+  --type &lt;volume-type&gt;  Set the type of volume
+  --image &lt;image&gt;       Use &lt;image&gt; as source of volume (name or ID)
+  --snapshot &lt;snapshot&gt;
+                        Use &lt;snapshot&gt; as source of volume (name or ID)
+  --source &lt;volume&gt;     Volume to clone (name or ID)
+</pre></div>
+</div>
+</div>
+<div class="section" id="resources">
+<h1>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://developer.openstack.org/api-ref/block-storage/">API Reference</a></div>
+<div class="line"><a class="reference external" href="https://docs.openstack.org/cinder/latest/cli/index.html">CLI Docs</a></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Aleksander.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v1.7
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../master/basics/cinder.html">master</a></dd>
+            <dd><a href="../../v1.1/basics/cinder.html">v1.1</a></dd>
+            <dd><a href="cinder.html">v1.7</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
