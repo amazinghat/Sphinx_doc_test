@@ -15,6 +15,7 @@ This is new version for dev branch!!!
    :caption: OpenStack
 
    basics/README
+   jakisfeature/czescfeaturea/opis
 
 .. toctree::
    :maxdepth: 2
