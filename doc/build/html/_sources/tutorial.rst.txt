@@ -3,9 +3,9 @@ Tutorial
 
 Prosty tutorial zawierajacy podstawowe formatowania w restructuredText
 
-.. versionadded:: 1.0.3
+.. versionadded:: 1.1
 
-zmiana na masterze
+Nowa wersja nowy branch nowy ja
 
 Naglowki
 ========
